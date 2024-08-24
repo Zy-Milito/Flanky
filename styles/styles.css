@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#global-header {
+    transition: background-color 0.2s linear;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    
+    &.solid {
+        background-color: #ffa4e8;
+        transition: background-color 0.2s linear;
+    }
+
+    navbar {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 50px;
+        font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+    
+        .logo {
+            width: 250px;
+        }
+
+        .menu {
+            width: 15%;
+            overflow: hidden;
+            text-wrap: nowrap;
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 28px;
+                margin: 0 30px;
+            }
+
+            a:not(:nth-of-type(1)):hover {
+                text-decoration: underline;
+            }
+
+            a:not(:nth-of-type(1)):active {
+                font-weight: 700;
+            }
+
+            span {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 28px;
+                margin: 0 30px;
+            }
+
+            transition-duration: 0.5s;
+        }
+
+        .menu:hover {
+            width: 60%;
+            transition-duration: 1s;
+
+            a:nth-of-type(1) {
+                cursor: default;
+            }
+        }
+    }
+}
+
+body {
+    main {
+        #slideshow {
+            img {
+                width: 100%;
+            }
+
+            .slides {
+                display: none;
+            }
+
+            /* .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            } */
+
+            .slogan {
+                font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                top: 40%;
+                font-size: 62px;
+                color: #7affb6;
+            }
+
+            .arrow {
+                z-index: 3;
+                position: absolute;
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto;
+                width: 200px;
+
+                a {
+                    top: 62%;
+                    position: fixed;
+                    height: 0;
+
+                    img {
+                        margin-top: 140px;
+                        width: 200px;
+                        transition: 0.2s;
+
+                        &.flip {
+                            transition: 0.2s;
+                            -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .index {
+            padding: 50px 0;
+            /* background-color: #fcfcfc; */
+            font-family: 'Be Vietnam Pro', Verdana, Geneva, Tahoma, sans-serif;
+            background-image: linear-gradient(#fcfcfc, #fff8db);
+
+            h2 {
+                font-size: 52px;
+                text-align: center;
+                color:rgb(255, 121, 155);
+            }
+
+            h2:after {
+                content: "";
+                display: block;
+                height: 2px;
+                width: 650px;
+                margin: 40px auto 0;
+                background-color: #bebebe;
+            }
+
+            .ingredients-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #e4e4e4;
+                margin: 100px 0;
+                border-radius: 200px;
+
+                div {
+                    margin: 60px 130px;
+                    width: fit-content;
+
+                    h3 {
+                        font-size: 42px;
+                    }
+
+                    ol, li {
+                        font-size: 32px;
+                    }
+
+                    ol {
+                        margin-top: 70px;
+                    }
+                }
+
+                img {
+                    width: 430px;
+                    border-radius: 25px;
+                }
+            }
+
+            .preparation-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+                background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
+
+                .textarea {
+                    width: 850px;
+                    margin: 0 0 0 60px;
+                    text-align: justify;
+
+                    h3 {
+                        font-size: 38px;
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                img {
+                    width: 900px;
+                    border-top-left-radius: 200px;
+                    border-bottom-left-radius: 200px;
+                }
+            }
+
+            section {
+                margin: 40px;
+
+                h4:before {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 1350px;
+                    margin: 40px auto 40px;
+                    background-color: #bebebe;
+                }
+
+                h4 {
+                    font-size: 32px;
+                    text-align: center;
+                }
+
+                .btn-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 40px;
+
+                    div {
+                        width: 600px;
+                        text-align: center;
+
+                        .recipe-btn {
+                            border: none;
+                            color: #ffffff;
+                            display: inline-block;
+                            border-radius: 4px;
+                            padding: 20px 40px;
+                            cursor: pointer;
+                        }
+    
+                        .btn-style1 {
+                            background: linear-gradient(90deg, var(--color1), var(--color2));
+                            transition: --color1 0.8s, --color2 0.8s;
+                        }
+    
+                        .btn-style2 {
+                            background: linear-gradient(90deg, var(--color2), var(--color1));
+                            transition: --color2 0.8s, --color1 0.8s;
+                        }
+    
+                        .btn-style1:hover {
+                            --color1: #77a6ff;;
+                            --color2: #ff69af;
+                            transition: --color1 0.8s, --color2 0.8s;
+                        }
+    
+                        .btn-style2:hover {
+                            --color1: #77a6ff;;
+                            --color2: #ff69af;
+                            transition: --color1 0.8s, --color2 0.8s;
+                        }
+    
+                        .recipe-btn:active {
+                            --color1: #ff4ad8;
+                            --color2: #ff4ad8;
+                        }
+                        
+                        .recipe-btn a {
+                            display: inline-block;
+                            position: relative;
+                            transition: 0.5s;
+                            text-decoration: none;
+                            font-size: 24px;
+                            color: #ffffff;
+                        }
+                        
+                        .recipe-btn a:after {
+                            content: "»";
+                            position: absolute;
+                            opacity: 0;
+                            top: 0;
+                            right: -20px;
+                            transition: 0.5s;
+                        }
+                        
+                        .recipe-btn:hover a {
+                            padding-right: 25px;
+                        }
+                        
+                        .recipe-btn:hover a:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: "brand disclaimer socials";
+        background-color: #ffa4e8;
+        padding: 40px;
+        align-items: center;
+        color: white;
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 0 0 0 40px;
+
+            p{
+                font-size: 26px;
+            }
+
+            img {
+                width: 100px;
+                margin: 0 10px;
+            }
+        }
+
+        .disclaimer {
+            font-size: 12px;
+        }
+        
+        .socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 40px;
+                margin: 0 0 0 40px;
+            }
+        }
+    }
+}
+
+@property --color1 {
+    syntax: '<color>';
+    initial-value: #ff69af;
+    inherits: false;
+}
+
+@property --color2 {
+    syntax: '<color>';
+    initial-value: #77a6ff;
+    inherits: false;
+}
+
+/* @keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+} */
