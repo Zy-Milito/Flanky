@@ -11,72 +11,72 @@ html {
     height: auto;
 }
 
-#global-header {
-    transition: background-color 0.2s linear;
-    width: 100vw;
-    position: fixed;
-    z-index: 3;
-    
-    &.solid {
-        background-color: #ffa4e8;
-        transition: background-color 0.2s linear;
-    }
-
-    navbar {
-        display: flex;
-        flex-flow: wrap;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0.26vw 2.6vw;
-        font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
-    
-        .logo {
-            width: 13vw;
-        }
-
-        .menu {
-            width: 15%;
-            overflow: hidden;
-            text-wrap: nowrap;
-
-            a {
-                cursor: pointer;
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 1.46vw;
-                margin: 0 1.5vw;
-            }
-
-            a:not(:nth-of-type(1)):hover {
-                text-decoration: underline;
-            }
-
-            a:not(:nth-of-type(1)):active {
-                font-weight: 700;
-            }
-
-            span {
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 1.46vw;
-                margin: 0 1.5vw;
-            }
-
-            transition-duration: 0.5s;
-        }
-
-        .menu:hover {
-            width: 60%;
-            transition-duration: 1s;
-
-            a:nth-of-type(1) {
-                cursor: default;
-            }
-        }
-    }
-}
-
 body {
+    #global-header {
+        transition: background-color 0.2s linear;
+        width: 100vw;
+        position: fixed;
+        z-index: 3;
+        
+        &.solid {
+            background-color: #ffa4e8;
+            transition: background-color 0.2s linear;
+        }
+    
+        navbar {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0.26vw 2.6vw;
+            font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
+        
+            .logo {
+                width: 13vw;
+            }
+    
+            .menu {
+                width: 15%;
+                overflow: hidden;
+                text-wrap: nowrap;
+    
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 1.46vw;
+                    margin: 0 1.5vw;
+                }
+    
+                a:not(:nth-of-type(1)):hover {
+                    text-decoration: underline;
+                }
+    
+                a:not(:nth-of-type(1)):active {
+                    font-weight: 700;
+                }
+    
+                span {
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 1.46vw;
+                    margin: 0 1.5vw;
+                }
+    
+                transition-duration: 0.5s;
+            }
+    
+            .menu:hover {
+                width: 60%;
+                transition-duration: 1s;
+    
+                a:nth-of-type(1) {
+                    cursor: default;
+                }
+            }
+        }
+    }
+
     main {
         #slideshow {
             img {
@@ -288,7 +288,7 @@ body {
                 margin-bottom: 3.1vw;
                 border-top-left-radius: 3.1vw;
                 border-bottom-left-radius: 3.1vw;
-                background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
+                background-image: linear-gradient(to right, rgb(239, 216, 255), rgb(189, 118, 255));
 
                 .textarea {
                     width: 44.3vw;
@@ -321,7 +321,7 @@ body {
                 justify-content: space-between;
                 border-top-right-radius: 3.1vw;
                 border-bottom-right-radius: 3.1vw;
-                background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
+                background-image: linear-gradient(to left, rgb(216, 255, 236), rgb(118, 255, 189));
 
                 .textarea {
                     width: 44.3vw;
@@ -395,13 +395,13 @@ body {
                         }
     
                         .btn-style1:hover {
-                            --color1: #77a6ff;;
+                            --color1: #77a6ff;
                             --color2: #ff69af;
                             transition: --color1 0.8s, --color2 0.8s;
                         }
     
                         .btn-style2:hover {
-                            --color1: #77a6ff;;
+                            --color1: #77a6ff;
                             --color2: #ff69af;
                             transition: --color1 0.8s, --color2 0.8s;
                         }
@@ -504,7 +504,7 @@ body {
             }
 
             img {
-                width: 100px;
+                width: 5.2vw;
                 margin: 0 0.52vw;
             }
         }
@@ -519,7 +519,7 @@ body {
             align-items: center;
 
             img {
-                width: 40px;
+                width: 2.1vw;
                 margin: 0 0 0 2.1vw;
             }
         }
@@ -541,7 +541,7 @@ body {
 /******************
     RESPONSIVE
 ******************/
-@media (min-width: 1024px) and (max-width: 1900px) {
+@media (width < 1900px) {
     body {
         main {
             #slideshow {
@@ -553,52 +553,239 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    #global-header {
-        background-color: #ffa4e8;
-        position: relative;
-
-        navbar {
-            display: inline;
-            text-align: center;
-
-            .menu {
-                display: none;
+@media (width < 1024px) {
+    body {
+        #global-header {
+            background-color: #ffa4e8;
+            position: relative;
+    
+            navbar {
+                display: inline;
+                text-align: center;
+    
+                .menu {
+                    display: none;
+                }
             }
         }
-    }
 
-    body {
         main {
-            #slideshow {
-                .arrow {
-                    display: none;
+            .index {
+                section {
+                    .btn-container {
+                        div {
+                            .recipe-btn a:after {
+                                display: none;
+                            }
+
+                            .btn-style1 {
+                                transition: none;
+                            }
+        
+                            .btn-style2 {
+                                transition: none;
+                            }
+
+                            .btn-style1:hover {
+                                --color1: initial;
+                                --color2: initial;
+                                transition: none;
+                            }
+        
+                            .btn-style2:hover {
+                                --color1: initial;
+                                --color2: initial;
+                                transition: none;
+                            }
+
+                            .recipe-btn:active {
+                                --color1: #ff4ad8;
+                                --color2: #ff4ad8;
+                            }
+
+                            .recipe-btn:hover a {
+                                padding-right: initial;
+                            }
+
+                            .owo-btn:active {
+                                --color1: #ff4ad8;
+                                --color2: #ff4ad8;
+                            }
+
+                            .owo-btn a:after {
+                               display: none;
+                            }
+
+                            .owo-btn:hover a {
+                                padding-right: initial;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-@media (max-width: 767px) {
-    #global-header {
-        background-color: #ffa4e8;
-        position: relative;
+@media (width <= 768px) {
+    
+    body {
+        #global-header {
+            background-color: #ffa4e8;
+            position: relative;
+    
+            navbar {
+                display: inline;
+                text-align: center;
+    
+                .menu {
+                    display: none;
+                }
+            }
+        }
 
-        navbar {
-            display: inline;
-            text-align: center;
+        main {
+            .index {
+                .ingredients-container, .ingredients-container1, .ingredients-container2 {
+                    border-radius: 5vw;
 
-            .menu {
-                display: none;
+                    div {
+                        margin: 1vw 2vw;
+                        width: 40vw;
+
+                        h3 {
+                            font-size: 3.2vw;
+                        }
+    
+                        ol, li {
+                            font-size: 2.2vw;
+                        }
+
+                        ol {
+                            margin-top: 1.6vw;
+                        }
+                    }
+
+
+                    img {
+                        width: 36vw;
+                    }
+                }
             }
         }
     }
+}
 
+@media (width <= 375px) {
     body {
+        #global-header {
+            navbar {
+                .logo {
+                    width: 30vw;
+                }
+            }
+        }
+        
         main {
-            #slideshow {
-                .arrow {
-                    display: none;
+            .index {
+                .preparation-container {
+                    background-image: linear-gradient(to bottom, rgb(216, 255, 236), rgb(118, 255, 189));
+                }
+
+                .preparation-container1 {
+                    background-image: linear-gradient(to bottom, rgb(239, 216, 255), rgb(189, 118, 255));
+                }
+
+                .preparation-container2 {
+                    background-image: linear-gradient(to top, rgb(216, 255, 236), rgb(118, 255, 189));
+                }
+
+                .preparation-container, .preparation-container1, .preparation-container2 {
+                    flex-direction: column;
+                    text-align: center;
+
+                    .textarea {
+                        width: 90vw;
+                        margin: 4vw 0;
+
+                        h3 {
+                            font-size: 4vw;
+                        }
+
+                        p {
+                            font-size: 2vw;
+                            line-height: 3vw;
+                        }
+                    }
+
+                    img {
+                        margin: 4vw 0;
+                        width: 90vw;
+                        border-radius: 2vw;
+                    }
+                }
+
+                section {
+                    margin: 4vw 0;
+
+                    h4 {
+                        font-size: 3vw;
+                    }
+
+                    .btn-container {
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 5vw;
+
+                        div {
+                            margin: 3vw 0;
+                            width: 40vw;
+
+                            .recipe-btn {
+                                padding: 1.4vw 5vw;
+                                border-radius: 1vw;
+                            }
+
+                            .recipe-btn a {
+                                font-size: 3vw;
+                            }
+
+                            .owo-btn {
+                                padding: 1.4vw 5vw;
+                                border-radius: 1vw;
+                            }
+
+                            .owo-btn a {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            grid-template-areas: none;
+            grid-template-columns: "brand disclaimer socials";
+            justify-content: center;
+
+            div {
+                justify-content: center;
+                margin: 2vw 0;
+            }
+
+            .brand {
+                p {
+                    font-size: 3vw;
+                }
+                img {
+                    width: 14vw;
+                }
+            }
+
+            .socials {
+                a img {
+                    width: 4.5vw;
                 }
             }
         }
