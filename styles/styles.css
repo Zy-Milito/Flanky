@@ -27,11 +27,11 @@ html {
         flex-flow: wrap;
         align-items: center;
         justify-content: space-between;
-        margin: 5px 50px;
+        margin: 0.26vw 2.6vw;
         font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
     
         .logo {
-            width: 250px;
+            width: 13vw;
         }
 
         .menu {
@@ -43,8 +43,8 @@ html {
                 cursor: pointer;
                 text-decoration: none;
                 color: #ffffff;
-                font-size: 28px;
-                margin: 0 30px;
+                font-size: 1.46vw;
+                margin: 0 1.5vw;
             }
 
             a:not(:nth-of-type(1)):hover {
@@ -58,8 +58,8 @@ html {
             span {
                 text-decoration: none;
                 color: #ffffff;
-                font-size: 28px;
-                margin: 0 30px;
+                font-size: 1.46vw;
+                margin: 0 1.5vw;
             }
 
             transition-duration: 0.5s;
@@ -104,7 +104,7 @@ body {
                 right: 0; 
                 margin-left: auto; 
                 margin-right: auto;
-                width: 200px;
+                width: 10.4vw;
 
                 a {
                     top: 62%;
@@ -112,8 +112,8 @@ body {
                     height: 0;
 
                     img {
-                        margin-top: 140px;
-                        width: 200px;
+                        margin-top: 7.3vw;
+                        width: 10.4vw;
                         transition: 0.2s;
 
                         &.flip {
@@ -128,7 +128,7 @@ body {
         }
 
         .index {
-            padding: 50px 0;
+            padding: 2.6vw 0;
             font-family: 'Be Vietnam Pro', Verdana, Geneva, Tahoma, sans-serif;
             background-image: linear-gradient(#fcfcfc, #fff8db);
 
@@ -141,9 +141,9 @@ body {
             h2:after {
                 content: "";
                 display: block;
-                height: 2px;
+                height: 0.1vw;
                 width: 34vw;
-                margin: 40px auto 0;
+                margin: 2.1vw auto 0;
                 background-color: #bebebe;
             }
 
@@ -154,11 +154,11 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color: #e4e4e4;
-                margin: 100px 0;
-                border-radius: 200px;
+                margin: 5.2vw 0;
+                border-radius: 10.4vw;
 
                 div {
-                    margin: 60px 130px;
+                    margin: 3.1vw 6.8vw;
                     width: fit-content;
 
                     h3 {
@@ -170,13 +170,13 @@ body {
                     }
 
                     ol {
-                        margin-top: 70px;
+                        margin-top: 3.6vw;
                     }
                 }
 
                 img {
-                    width: 430px;
-                    border-radius: 25px;
+                    width: 22.4vw;
+                    border-radius: 1.3vw;
                 }
             }
 
@@ -187,11 +187,11 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color: #e4e4e4;
-                margin: 100px 0;
-                border-radius: 100px;
+                margin: 5.2vw 0;
+                border-radius: 5.2vw;
 
                 div {
-                    margin: 60px 130px;
+                    margin: 3.1vw 6.8vw;
                     width: fit-content;
 
                     h3 {
@@ -203,13 +203,13 @@ body {
                     }
 
                     ol {
-                        margin-top: 40px;
+                        margin-top: 2.1vw;
                     }
                 }
 
                 img {
-                    width: 460px;
-                    border-radius: 25px;
+                    width: 23.4vw;
+                    border-radius: 1.3vw;
                 }
             }
 
@@ -220,11 +220,11 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color: #e4e4e4;
-                margin: 100px 0;
-                border-radius: 100px;
+                margin: 5.2vw 0;
+                border-radius: 5.2vw;
 
                 div {
-                    margin: 60px 130px;
+                    margin: 3.1vw 6.8vw;
                     width: fit-content;
 
                     h3 {
@@ -236,13 +236,13 @@ body {
                     }
 
                     ol {
-                        margin-top: 40px;
+                        margin-top: 2.1vw;
                     }
                 }
 
                 img {
-                    width: 460px;
-                    border-radius: 25px;
+                    width: 23.4vw;
+                    border-radius: 1.3vw;
                 }
             }
 
@@ -252,30 +252,30 @@ body {
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
+                border-top-left-radius: 3.1vw;
+                border-bottom-left-radius: 3.1vw;
                 background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
 
                 .textarea {
-                    width: 850px;
-                    margin: 0 0 0 60px;
+                    width: 44.3vw;
+                    margin: 0 0 0 3.1vw;
                     text-align: justify;
 
                     h3 {
                         font-size: 1.9vw;
-                        margin-bottom: 25px;
+                        margin-bottom: 1.3vw;
                     }
 
                     p {
                         font-size: 1.05vw;
-                        line-height: 30px;
+                        line-height: 1.56vw;
                     }
                 }
 
                 img {
-                    width: 900px;
-                    border-top-left-radius: 200px;
-                    border-bottom-left-radius: 200px;
+                    width: 46.9vw;
+                    border-top-left-radius: 10.4vw;
+                    border-bottom-left-radius: 10.4vw;
                 }
             }
 
@@ -285,31 +285,31 @@ body {
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
-                margin-bottom: 60px;
-                border-top-left-radius: 60px;
-                border-bottom-left-radius: 60px;
+                margin-bottom: 3.1vw;
+                border-top-left-radius: 3.1vw;
+                border-bottom-left-radius: 3.1vw;
                 background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
 
                 .textarea {
-                    width: 850px;
-                    margin: 0 0 0 60px;
+                    width: 44.3vw;
+                    margin: 0 0 0 3.1vw;
                     text-align: justify;
 
                     h3 {
                         font-size: 1.9vw;
-                        margin-bottom: 25px;
+                        margin-bottom: 1.3vw;
                     }
 
                     p {
                         font-size: 1.05vw;
-                        line-height: 30px;
+                        line-height: 1.56vw;
                     }
                 }
 
                 img {
-                    width: 900px;
-                    border-top-left-radius: 200px;
-                    border-bottom-left-radius: 200px;
+                    width: 46.9vw;
+                    border-top-left-radius: 10.4vw;
+                    border-bottom-left-radius: 10.4vw;
                 }
             }
 
@@ -319,47 +319,47 @@ body {
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
-                border-top-right-radius: 60px;
-                border-bottom-right-radius: 60px;
+                border-top-right-radius: 3.1vw;
+                border-bottom-right-radius: 3.1vw;
                 background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
 
                 .textarea {
-                    width: 850px;
-                    margin: 0 60px 0 0;
+                    width: 44.3vw;
+                    margin: 0 3.1vw 0 0;
                     text-align: justify;
 
                     h3 {
                         font-size: 1.9vw;
-                        margin-bottom: 25px;
+                        margin-bottom: 1.3vw;
                     }
 
                     p {
                         font-size: 1.05vw;
-                        line-height: 30px;
+                        line-height: 1.56vw;
                     }
                 }
 
                 img {
-                    width: 900px;
-                    border-top-right-radius: 200px;
-                    border-bottom-right-radius: 200px;
+                    width: 46.9vw;
+                    border-top-right-radius: 10.4vw;
+                    border-bottom-right-radius: 10.4vw;
                 }
             }
 
             section {
-                margin: 40px;
+                margin: 2.1vw;
 
                 h4:before {
                     content: "";
                     display: block;
-                    height: 2px;
+                    height: 0.1vw;
                     width: 70vw;
-                    margin: 40px auto 40px;
+                    margin: 2.1vw auto 2.1vw;
                     background-color: #bebebe;
                 }
 
                 h4 {
-                    font-size: 32px;
+                    font-size: 1.67vw;
                     text-align: center;
                     font-family: 'Charmonman';
                 }
@@ -369,18 +369,18 @@ body {
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: center;
-                    margin: 40px;
+                    margin: 2.1vw;
 
                     div {
-                        width: 600px;
+                        width: 31.25vw;
                         text-align: center;
 
                         .recipe-btn {
                             border: none;
                             color: #ffffff;
                             display: inline-block;
-                            border-radius: 4px;
-                            padding: 20px 40px;
+                            border-radius: 0.21vw;
+                            padding: 1.04vw 2.1vw;
                             cursor: pointer;
                         }
     
@@ -416,7 +416,7 @@ body {
                             position: relative;
                             transition: 0.5s;
                             text-decoration: none;
-                            font-size: 24px;
+                            font-size: 1.25vw;
                             color: #ffffff;
                         }
                         
@@ -425,12 +425,12 @@ body {
                             position: absolute;
                             opacity: 0;
                             top: 0;
-                            right: -20px;
+                            right: -1.04vw;
                             transition: 0.5s;
                         }
                         
                         .recipe-btn:hover a {
-                            padding-right: 25px;
+                            padding-right: 1.3vw;
                         }
                         
                         .recipe-btn:hover a:after {
@@ -442,8 +442,8 @@ body {
                             border: none;
                             color: #ffffff;
                             display: inline-block;
-                            border-radius: 4px;
-                            padding: 20px 40px;
+                            border-radius: 0.21vw;
+                            padding: 1.04vw 2.1vw;
                             cursor: pointer;
                         }
 
@@ -457,7 +457,7 @@ body {
                             position: relative;
                             transition: 0.5s;
                             text-decoration: none;
-                            font-size: 24px;
+                            font-size: 1.25vw;
                             color: #ffffff;
                         }
 
@@ -466,12 +466,12 @@ body {
                             position: absolute;
                             opacity: 0;
                             top: 0;
-                            right: -20px;
+                            right: -1.04vw;
                             transition: 0.5s;
                         }
                         
                         .owo-btn:hover a {
-                            padding-right: 25px;
+                            padding-right: 1.3vw;
                         }
                         
                         .owo-btn:hover a:after {
@@ -488,7 +488,7 @@ body {
         display: grid;
         grid-template-areas: "brand disclaimer socials";
         background-color: #ffa4e8;
-        padding: 40px;
+        padding: 2.1vw;
         align-items: center;
         color: white;
 
@@ -497,20 +497,20 @@ body {
             flex-direction: row;
             flex-wrap: nowrap;
             align-items: center;
-            margin: 0 0 0 40px;
+            margin: 0 0 0 2.1vw;
 
             p{
-                font-size: 26px;
+                font-size: 1.35vw;
             }
 
             img {
                 width: 100px;
-                margin: 0 10px;
+                margin: 0 0.52vw;
             }
         }
 
         .disclaimer {
-            font-size: 12px;
+            font-size: 0.6vw;
         }
         
         .socials {
@@ -520,7 +520,7 @@ body {
 
             img {
                 width: 40px;
-                margin: 0 0 0 40px;
+                margin: 0 0 0 2.1vw;
             }
         }
     }
@@ -581,6 +581,16 @@ body {
             }
         }
     }
+
+    body {
+        main {
+            #slideshow {
+                .arrow {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -594,6 +604,16 @@ body {
 
             .menu {
                 display: none;
+            }
+        }
+    }
+
+    body {
+        main {
+            #slideshow {
+                .arrow {
+                    display: none;
+                }
             }
         }
     }
