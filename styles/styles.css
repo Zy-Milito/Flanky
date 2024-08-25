@@ -87,18 +87,13 @@ body {
                 display: none;
             }
 
-            /* .fade {
-                animation-name: fade;
-                animation-duration: 1.5s;
-            } */
-
             .slogan {
                 font-family: 'Roboto Mono', Verdana, Geneva, Tahoma, sans-serif;
                 position: absolute;
                 width: 100%;
                 text-align: center;
                 top: 40%;
-                font-size: 62px;
+                font-size: 3.2vw;
                 color: #7affb6;
             }
 
@@ -134,12 +129,11 @@ body {
 
         .index {
             padding: 50px 0;
-            /* background-color: #fcfcfc; */
             font-family: 'Be Vietnam Pro', Verdana, Geneva, Tahoma, sans-serif;
             background-image: linear-gradient(#fcfcfc, #fff8db);
 
             h2 {
-                font-size: 52px;
+                font-size: 2.6vw;
                 text-align: center;
                 color:rgb(255, 121, 155);
             }
@@ -148,7 +142,7 @@ body {
                 content: "";
                 display: block;
                 height: 2px;
-                width: 650px;
+                width: 34vw;
                 margin: 40px auto 0;
                 background-color: #bebebe;
             }
@@ -168,11 +162,11 @@ body {
                     width: fit-content;
 
                     h3 {
-                        font-size: 42px;
+                        font-size: 2.1vw;
                     }
 
                     ol, li {
-                        font-size: 32px;
+                        font-size: 1.6vw;
                     }
 
                     ol {
@@ -201,11 +195,11 @@ body {
                     width: fit-content;
 
                     h3 {
-                        font-size: 36px;
+                        font-size: 2vw;
                     }
 
                     ol, li {
-                        font-size: 24px;
+                        font-size: 1.6vw;
                     }
 
                     ol {
@@ -234,11 +228,11 @@ body {
                     width: fit-content;
 
                     h3 {
-                        font-size: 36px;
+                        font-size: 2vw;
                     }
 
                     ol, li {
-                        font-size: 24px;
+                        font-size: 1.6vw;
                     }
 
                     ol {
@@ -268,12 +262,12 @@ body {
                     text-align: justify;
 
                     h3 {
-                        font-size: 38px;
+                        font-size: 1.9vw;
                         margin-bottom: 25px;
                     }
 
                     p {
-                        font-size: 20px;
+                        font-size: 1.05vw;
                         line-height: 30px;
                     }
                 }
@@ -302,12 +296,12 @@ body {
                     text-align: justify;
 
                     h3 {
-                        font-size: 38px;
+                        font-size: 1.9vw;
                         margin-bottom: 25px;
                     }
 
                     p {
-                        font-size: 20px;
+                        font-size: 1.05vw;
                         line-height: 30px;
                     }
                 }
@@ -335,12 +329,12 @@ body {
                     text-align: justify;
 
                     h3 {
-                        font-size: 38px;
+                        font-size: 1.9vw;
                         margin-bottom: 25px;
                     }
 
                     p {
-                        font-size: 20px;
+                        font-size: 1.05vw;
                         line-height: 30px;
                     }
                 }
@@ -359,7 +353,7 @@ body {
                     content: "";
                     display: block;
                     height: 2px;
-                    width: 1350px;
+                    width: 70vw;
                     margin: 40px auto 40px;
                     background-color: #bebebe;
                 }
@@ -544,7 +538,63 @@ body {
     inherits: false;
 }
 
-/* @keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-} */
+/******************
+    RESPONSIVE
+******************/
+@media (min-width: 1024px) and (max-width: 1900px) {
+    #global-header {
+        background-color: #ffa4e8;
+        position: relative;
+
+        navbar {
+            display: inline;
+            text-align: center;
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+
+    body {
+        main {
+            #slideshow {
+                .arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #global-header {
+        background-color: #ffa4e8;
+        position: relative;
+
+        navbar {
+            display: inline;
+            text-align: center;
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #global-header {
+        background-color: #ffa4e8;
+        position: relative;
+
+        navbar {
+            display: inline;
+            text-align: center;
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
