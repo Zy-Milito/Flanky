@@ -542,20 +542,6 @@ body {
     RESPONSIVE
 ******************/
 @media (min-width: 1024px) and (max-width: 1900px) {
-    #global-header {
-        background-color: #ffa4e8;
-        position: relative;
-
-        navbar {
-            display: inline;
-            text-align: center;
-
-            .menu {
-                display: none;
-            }
-        }
-    }
-
     body {
         main {
             #slideshow {
