@@ -775,16 +775,23 @@ body {
 
             .brand {
                 p {
-                    font-size: 3vw;
+                    font-size: 5vw;
                 }
                 img {
-                    width: 14vw;
+                    width: 22vw;
+                }
+            }
+
+            .disclaimer {
+                p {
+                    text-align: center;
+                    font-size: 2vw;
                 }
             }
 
             .socials {
                 a img {
-                    width: 4.5vw;
+                    width: 7.5vw;
                 }
             }
         }
