@@ -92,7 +92,7 @@ body {
                 position: absolute;
                 width: 100%;
                 text-align: center;
-                top: 40%;
+                top: 40vh;
                 font-size: 3.2vw;
                 color: #7affb6;
             }
@@ -166,6 +166,7 @@ body {
                     }
 
                     ol, li {
+                        text-align: justify;
                         font-size: 1.6vw;
                     }
 
@@ -199,6 +200,7 @@ body {
                     }
 
                     ol, li {
+                        text-align: justify;
                         font-size: 1.6vw;
                     }
 
@@ -232,6 +234,7 @@ body {
                     }
 
                     ol, li {
+                        text-align: left;
                         font-size: 1.6vw;
                     }
 
@@ -637,6 +640,10 @@ body {
             navbar {
                 display: inline;
                 text-align: center;
+
+                .logo {
+                    width: 30vw;
+                }
     
                 .menu {
                     display: none;
@@ -645,55 +652,47 @@ body {
         }
 
         main {
+            #slideshow {
+                .slogan {
+                    top: 20vh;
+                }
+            }
             .index {
+                h2 {
+                    font-size: 4vw;
+                    margin-top: 2vw;
+                }
+
+                h2:after {
+                    width: 50vw;
+                }
+
                 .ingredients-container, .ingredients-container1, .ingredients-container2 {
-                    border-radius: 5vw;
 
                     div {
-                        margin: 1vw 2vw;
-                        width: 40vw;
+                        width: 43vw;
+                        margin: 3.1vw 1.8vw;
 
                         h3 {
-                            font-size: 3.2vw;
+                            font-size: 4vw;
                         }
-    
+
                         ol, li {
-                            font-size: 2.2vw;
-                        }
-
-                        ol {
-                            margin-top: 1.6vw;
+                            font-size: 3vw;
                         }
                     }
-
-
                     img {
-                        width: 36vw;
+                        width: 40vw;
                     }
                 }
-            }
-        }
-    }
-}
 
-@media (width <= 375px) {
-    body {
-        #global-header {
-            navbar {
-                .logo {
-                    width: 30vw;
-                }
-            }
-        }
-        
-        main {
-            .index {
                 .preparation-container {
                     background-image: linear-gradient(to bottom, rgb(216, 255, 236), rgb(118, 255, 189));
                 }
 
                 .preparation-container1 {
                     background-image: linear-gradient(to bottom, rgb(239, 216, 255), rgb(189, 118, 255));
+                    margin-bottom: 6vw;
                 }
 
                 .preparation-container2 {
