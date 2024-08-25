@@ -13,7 +13,7 @@ html {
 
 #global-header {
     transition: background-color 0.2s linear;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 3;
     
@@ -186,6 +186,72 @@ body {
                 }
             }
 
+            .ingredients-container1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #e4e4e4;
+                margin: 100px 0;
+                border-radius: 100px;
+
+                div {
+                    margin: 60px 130px;
+                    width: fit-content;
+
+                    h3 {
+                        font-size: 36px;
+                    }
+
+                    ol, li {
+                        font-size: 24px;
+                    }
+
+                    ol {
+                        margin-top: 40px;
+                    }
+                }
+
+                img {
+                    width: 460px;
+                    border-radius: 25px;
+                }
+            }
+
+            .ingredients-container2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: #e4e4e4;
+                margin: 100px 0;
+                border-radius: 100px;
+
+                div {
+                    margin: 60px 130px;
+                    width: fit-content;
+
+                    h3 {
+                        font-size: 36px;
+                    }
+
+                    ol, li {
+                        font-size: 24px;
+                    }
+
+                    ol {
+                        margin-top: 40px;
+                    }
+                }
+
+                img {
+                    width: 460px;
+                    border-radius: 25px;
+                }
+            }
+
             .preparation-container {
                 display: flex;
                 flex-direction: row;
@@ -219,6 +285,73 @@ body {
                 }
             }
 
+            .preparation-container1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 60px;
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+                background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
+
+                .textarea {
+                    width: 850px;
+                    margin: 0 0 0 60px;
+                    text-align: justify;
+
+                    h3 {
+                        font-size: 38px;
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                img {
+                    width: 900px;
+                    border-top-left-radius: 200px;
+                    border-bottom-left-radius: 200px;
+                }
+            }
+
+            .preparation-container2 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                border-top-right-radius: 60px;
+                border-bottom-right-radius: 60px;
+                background-image: linear-gradient(to right, rgb(216, 255, 236), rgb(118, 255, 189));
+
+                .textarea {
+                    width: 850px;
+                    margin: 0 60px 0 0;
+                    text-align: justify;
+
+                    h3 {
+                        font-size: 38px;
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                img {
+                    width: 900px;
+                    border-top-right-radius: 200px;
+                    border-bottom-right-radius: 200px;
+                }
+            }
+
             section {
                 margin: 40px;
 
@@ -234,6 +367,7 @@ body {
                 h4 {
                     font-size: 32px;
                     text-align: center;
+                    font-family: 'Charmonman';
                 }
 
                 .btn-container {
@@ -306,6 +440,47 @@ body {
                         }
                         
                         .recipe-btn:hover a:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+
+                        .owo-btn {
+                            border: none;
+                            color: #ffffff;
+                            display: inline-block;
+                            border-radius: 4px;
+                            padding: 20px 40px;
+                            cursor: pointer;
+                        }
+
+                        .owo-btn:active {
+                            --color1: #ff4ad8;
+                            --color2: #ff4ad8;
+                        }
+                        
+                        .owo-btn a {
+                            display: inline-block;
+                            position: relative;
+                            transition: 0.5s;
+                            text-decoration: none;
+                            font-size: 24px;
+                            color: #ffffff;
+                        }
+
+                        .owo-btn a:after {
+                            content: "»";
+                            position: absolute;
+                            opacity: 0;
+                            top: 0;
+                            right: -20px;
+                            transition: 0.5s;
+                        }
+                        
+                        .owo-btn:hover a {
+                            padding-right: 25px;
+                        }
+                        
+                        .owo-btn:hover a:after {
                             opacity: 1;
                             right: 0;
                         }
