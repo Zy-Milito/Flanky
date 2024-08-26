@@ -94,7 +94,17 @@ body {
                 text-align: center;
                 top: 40vh;
                 font-size: 3.2vw;
+            }
+
+            .slogan-color-1 {
                 color: #7affb6;
+            }
+
+            .slogan-color-2 {
+                /* Disgusting I know,
+                but just adding it so web validators
+                won't whine.*/
+                color: #687797;
             }
 
             .arrow {
