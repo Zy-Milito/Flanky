@@ -23,7 +23,7 @@ body {
             transition: background-color 0.2s linear;
         }
     
-        navbar {
+        nav {
             display: flex;
             flex-flow: wrap;
             align-items: center;
@@ -562,7 +562,7 @@ body {
             background-color: #ffa4e8;
             position: relative;
     
-            navbar {
+            nav {
                 display: inline;
                 text-align: center;
     
@@ -637,7 +637,7 @@ body {
             background-color: #ffa4e8;
             position: relative;
     
-            navbar {
+            nav {
                 display: inline;
                 text-align: center;
 
