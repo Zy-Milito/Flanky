@@ -554,7 +554,7 @@ body {
 /******************
     RESPONSIVE
 ******************/
-@media (width < 1900px) {
+@media (width < 1200px) {
     body {
         main {
             #slideshow {
@@ -583,6 +583,12 @@ body {
         }
 
         main {
+            #slideshow {
+                .arrow {
+                    display: none;
+                }
+            }
+            
             .index {
                 section {
                     .btn-container {
